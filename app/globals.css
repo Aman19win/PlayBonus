@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body{ height:100%; background:#0f1a24; color:#fff; font-family: sans-serif; }
+.glass {
+  background: rgba(23,34,45,.9);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.5);
+}
+.chip {
+  background: #0f1a24;
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 8px;
+}
+.btn-primary {
+  @apply w-full py-3 rounded-xl font-extrabold text-slate-900;
+  background: linear-gradient(90deg, #37b3ff, #00a3ff);
+}
+.btn-ghost {
+  @apply w-full py-3 rounded-xl font-extrabold border border-white/10 bg-[#12232c] text-white;
+}
